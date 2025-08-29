@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors - Odin Project</title>
+
+
+</head>
+<body>
+    <script>
+        function getComputerChoice (){
+            let rand = Math.random();
+            if (rand <=0.33)
+                return 'rock';
+            else if (rand <=0.66)
+                return 'scissors';
+            else
+                return 'paper';
+        }
+
+
+        function getHumanChoice () {
+            let choice = prompt('Rock, Paper, or Scissors?').toLowerCase()
+            if (choice !== 'rock' || choice !== 'paper' || choice !== 'scissors')
+                return choice;
+            else 
+                return 'Imput an option between rock, paper or scissors'
+
+        }
+
+
+    </script>
+
+
+
+</body>
+</html>
